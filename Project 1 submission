@@ -1,0 +1,23 @@
+name = input("what is your name?")
+print(f"Hello {name} and welcome to CT8")
+favorite_food = input("what is your favorite food?")
+print(f"Yum! I love {favorite_food} too!")
+favorite_sport = input("what is your favorite sport?")
+print(f"Nice, {favorite_sport} is a great sport!")
+answer1 = input("Have you ever coded before?")
+if answer1 == "Yes":
+
+    answer2 = input("That is great! Do you like coding?")
+    if answer2 == "Yes":
+        print("Awesome well have fun!")
+    if answer2 == "No":
+        print ("I hope CT8 can change that!")
+
+if answer1 == "No":
+    
+        answer3 = input("Great! are you excited to learn?")
+        if answer3 == "Yes":
+            print("Great, Im sure CT8 will be awesome!")
+        if answer3 == "No":
+            print("I hope we can change that!")
+if answer1 == "Yessir
