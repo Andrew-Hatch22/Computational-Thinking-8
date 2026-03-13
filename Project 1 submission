@@ -20,4 +20,11 @@ if answer1 == "No":
             print("Great, Im sure CT8 will be awesome!")
         if answer3 == "No":
             print("I hope we can change that!")
-if answer1 == "Yessir
+
+if answer1 == "Yessir":
+      
+        answer4 = input("Lets goooo! Are you hyped?")
+        if answer4 == "Im hyped":
+            print("Its gonna be awesome")
+        if answer4 == "not hyped":
+            print("we are gonna change your mind")
