@@ -1,0 +1,50 @@
+superstrength_points = 0
+flying_points = 0
+superspeed_points = 0
+
+answer1 = input ("Would you rather A be able to lift 10000 pounds, B never have to use an airplane again, C Be able to get anywhere in your city in seconds    ")
+if answer1 == "A":
+    superstrength_points += 1
+elif answer1 == "B":
+    flying_points += 1
+elif answer1 == "C":
+    superspeed_points += 1
+
+answer2 = input ("is your favorite superhero A Captain America, B Iron Man, C The Flash?    ")
+if answer1 == "A":
+    superstrength_points += 1
+elif answer1 == "B":
+    flying_points += 1
+elif answer1 == "C":
+    superspeed_points += 1
+
+answer3 = input ("Would you rather A Be able to save your car from a tree falling on it, B be able to go to a foreign country in minutes flying, or C win the olympics every time in track?    ")
+if answer1 == "A":
+    superstrength_points += 1
+elif answer1 == "B":
+    flying_points += 1
+elif answer1 == "C":
+    superspeed_points += 1
+    
+answer4 = input ("would you rather A Never be able to go in the sky, B Never be able to run fast, C Never be able to lift weights?    ")
+if answer1 == "A":
+    superstrength_points += 1
+elif answer1 == "B":
+    flying_points += 1
+elif answer1 == "C":
+    superspeed_points += 1
+
+answer5 = input ("Would you rather work at A a gym, B a airline, C a racetrack?   ")
+if answer1 == "A" or answer1 == "a":
+    superstrength_points += 1
+elif answer1 == "B":
+    flying_points += 1
+elif answer1 == "C":
+    superspeed_points += 1
+
+if superstrength_points > flying_points and superstrength_points > superspeed_points:
+    print(" You have Super Strength!")
+elif flying_points > superstrength_points and flying_points > superspeed_points:
+    print(" You can Fly!")
+elif superspeed_points > flying_points and superspeed_points > superstrength_points:
+    print(" You have Super Speed!")
