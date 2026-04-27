@@ -2,11 +2,11 @@ import random
 import time
 import turtle
 from utils import create_sprite, set_background
-
 window = turtle.Screen()
 
-# Section 1 - Variables
+#got these imports from the quick fixes
 
+# Section 1 - Variables
 x1 = -8
 y1 = 4
 x2 = -8
@@ -26,9 +26,7 @@ t4 = create_sprite("cat",x4,y4)
 
 
 # # Section 3 - Racing
-# # TODO - set how much each variable changes by and increase the number of repeats to at least 30
-# # TODO - explain here which sprites are faster or slower
-for i in range(30):
+for i in range(40):
      x1 += random.randint(1,4)
      x2 += random.randint(2,3)
      x3 += 3
@@ -40,12 +38,10 @@ for i in range(30):
      t4.goto(x4, y4)
 
      window.update()
-     time.sleep(0.1)
-
+     time.sleep(0.2)
+#sprite 4 is the fastest because it has the highest range compared to 2 and 1. Sprite 3 has a steady increase that is on average as fast as 4.
 
 # # Section 4 - Winner
-# # TODO - complete the elif for player 2 winning
-# # TODO - write another elif for player 3 and player 4
 s5 = create_sprite("alien",-200,-200)
 if x1 >= x2 and x1 >= x3 and x1 >= x4:
     s5.write("Player 1 wins!")
